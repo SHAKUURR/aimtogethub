@@ -1,0 +1,233 @@
+ .navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(27, 6, 8, 0.94);
+    z-index: 1000000;  
+
+    @include respond (phone){ 
+        padding-top: 3rem;
+      
+       
+    }
+    
+   
+    &__logo-box{
+       float: left;
+       width: 30%;
+      
+
+    }
+
+    &__logo{
+        margin-left: 4rem;
+        width: 30%;
+        height: auto;
+        margin-top: 3.5rem;
+        
+        @include respond (phone){ 
+            margin-top: 0rem;
+            width: 50%;
+           
+          
+           
+        }
+    }
+
+    &__text-box{
+        font-size: 1.6rem;
+        float: right;
+        color: $color-white;
+        margin-top: 3rem;
+        margin-right: 1rem;
+
+
+    }
+
+    &__list{
+        
+        list-style: none;
+        
+
+        @include respond (small-lap){ //width= <900?
+           display: none;
+          
+           
+        }
+       
+
+    }
+
+    &__item{
+        display: inline-block;
+        margin-right: 5rem;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $color-white;
+    }
+}
+
+
+
+
+    
+.header{
+    margin-top: 20rem; //20rem;
+    
+
+    @include respond (tablet){
+        margin-top: 6rem;
+         
+     }
+}
+
+.heading-primary{
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    margin-top: 0; //-48rem;
+
+    @include respond (laptop){ 
+        width: 100%;
+         
+     }
+
+     @include respond (small-lap){
+        margin-top: -8rem; 
+        margin-bottom: 2rem;
+        width: 100%;
+          
+      } 
+
+    @include respond (tablet){ 
+      
+       margin-left: 0;
+        
+    }
+
+    @include respond (phone){ 
+        width: 100%;
+        margin: 0;
+        margin-top: 2rem;
+          
+      }
+}
+
+.paragraph{
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+
+    @include respond (laptop){ 
+        width: 100%;
+        margin-bottom: 5rem;
+          
+      }
+
+      @include respond (small-lap){ 
+        width: 100%;
+        margin-bottom: 3rem;
+          
+      }  
+    
+    @include respond (tablet){ 
+        margin-bottom: 1rem;
+          
+      }  
+
+      @include respond (phone){ 
+        width: 100%;
+        margin-bottom: 1rem;
+          
+      }
+}
+
+
+//hero animation
+
+.hero-animation{
+    &::before{
+        content: " ";
+        width: 20rem;
+        height: 20rem;
+        position: absolute;
+        border-radius: 100rem;
+        background-color:rgba(171, 41, 51, 0.075);
+        z-index: 0;
+        animation-duration: 30s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: SildesInverse;
+        top: 5%;
+        left: 10%;
+    }
+
+    &::after{
+        content: " ";
+        height: 30rem;
+        width: 30rem;
+        position: absolute;
+        border-radius: 100rem;
+        background-color: rgba(171, 41, 51, 0.075);
+        z-index: 0;
+        bottom: 5%;
+        right: 50%;
+        animation: Sildes 30s infinite;
+       
+        animation-timing-function: ease;
+        animation-delay: 0s;
+       
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        
+    
+    }
+}
+
+@keyframes SildesInverse{
+    30% {
+        height: 22rem;
+        width: 22rem;
+        left: 0%;
+    }
+
+    50% {
+        left: 70%;
+    }
+
+    75% {
+        top: 75%;
+        left: 25%;
+    }
+}
+
+
+@keyframes Sildes {
+
+    30% {
+        height: 15rem;
+        width: 15rem;
+        right: 0%;
+    }
+
+    50% {
+        right: 90%;
+    }
+
+    75% {
+        bottom: 75%;
+        right: 25%;
+    }
+}
+
+
+      
+       
+    
+  
