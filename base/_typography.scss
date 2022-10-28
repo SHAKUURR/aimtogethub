@@ -1,0 +1,46 @@
+.heading-secondary{
+    font-size: 3.6rem;
+    display: inline-block;
+    font-weight: 800;
+    
+    @include respond (phone){ 
+        font-size: 2rem;
+         
+     }
+}
+
+.heading-tertiary{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    &__span{
+        display: block;
+        margin-bottom: 2rem;
+
+        &--01{
+            margin-bottom: -.5rem;
+        } 
+
+    }
+
+    &__small{
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+}
+
+.pricing-paragraph{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    @include respond (tab-port){
+       font-size: 2.5rem;
+     }
+    
+    @include respond (phone){
+        font-size: 2rem;
+      } 
+}

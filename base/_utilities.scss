@@ -1,0 +1,81 @@
+.u-center-text{
+    text-align: center;
+}
+
+.u-margin-buttom{
+    margin-bottom: 8rem;
+}
+
+.u-margin-right{
+    margin-right: 5rem;
+}
+
+.u-margin-buttom-small{
+    margin-bottom: 5rem;
+}
+
+.u-features-color{
+    color: $bg-color-dark;
+}
+
+.u-features-white{
+    color: $color-white;
+}
+
+.line{
+    position: relative;
+    margin-bottom: 5rem;
+
+  
+
+    &::before{
+        border: none;
+        content: " ";
+        height: .5rem;
+        width: 50%;
+        top: 9rem;
+        left: 30%;
+        border-radius: 3rem;
+        position:absolute;
+        background-color:  #ab2933;
+
+        @include respond (tab-port){ 
+            top: 13rem;
+        }
+
+        @include respond (phone){ 
+            top: 8rem;
+        }
+
+    }
+
+    &::after{
+        content: "";
+        background-color: #ab2933;
+        border: 1rem solid $color-white;
+        border-radius: 100%;
+        padding: 1rem;
+        height: 3rem;
+        width: 2%;
+        position: absolute;
+        top: 7.3rem;
+        left: 47%;
+
+        @include respond (tab-port){ 
+            top: 11rem;
+        }
+
+        @include respond (phone){ 
+            top: 6rem;
+        }
+    }
+
+
+
+ 
+
+
+
+
+
+}
