@@ -1,0 +1,71 @@
+.pricing{
+    background-color: $color-white;
+    box-shadow: 0px 5px 20px rgba($color-black, 0.11);
+    height:105%;
+    width: auto;
+    border-radius: .9rem;
+    padding: 1rem;
+    text-align: center;
+
+    @include respond (tablet){
+       width: 45%;
+       margin: 0 auto;
+    }
+
+    @include respond (phone){
+        width: 80%;
+        margin: 0 auto;
+     }
+
+   
+
+    &__list{
+        list-style: none; 
+        font-size: 1.6rem;
+        width: 48%;
+        margin: 0 auto;
+
+        
+
+       
+    }
+
+    &__item{
+        margin-bottom: 1.6rem;
+        display: block;
+
+    }
+
+    &__middle{
+        z-index: 100;
+        transform: scale(1.2);
+        height: 107%;
+
+        @include respond (tablet){
+           height: 105%;
+           width: 45%;
+           transform: scale(1);
+           z-index: 1;
+        }
+
+        @include respond (phone){
+            width: 80%;
+            margin: 0 auto;
+         }
+        
+    }
+
+    &__icon{
+        font-size: 5rem;
+        
+    }
+    
+}
+
+.icon{
+    font-size: 4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+

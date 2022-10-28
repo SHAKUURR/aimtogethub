@@ -1,0 +1,10 @@
+.features{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 12rem;
+
+    @include respond (tab-port){
+       width: 55%;
+       margin-top: 2rem;
+    }
+}
